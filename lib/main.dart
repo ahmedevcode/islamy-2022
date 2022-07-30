@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:islamy2022/home/homescreen.dart';
+import 'package:islamy2022/home/quran/suradetailscreen.dart';
 
 void main() {
   runApp(MainApplication());
@@ -14,7 +15,11 @@ class Mythemedata {
       primaryColor: Mythemedata.primaryColor,
       appBarTheme: AppBarTheme(
         backgroundColor: Colors.transparent,
+        centerTitle: true,
         elevation: 0,
+        iconTheme: IconThemeData(
+          color: Colors.black,
+        ),
         titleTextStyle: TextStyle(
           color: Colors.black,
           fontSize: 30,
@@ -46,6 +51,7 @@ class MainApplication extends StatelessWidget {
       darkTheme: Mythemedata.darktheme,
       routes: {
         homescreen.routename: (buildContext) => homescreen(),
+        suradetailsscreen.routename: (buildcontext) => suradetailsscreen(),
       },
       initialRoute: homescreen.routename,
     );

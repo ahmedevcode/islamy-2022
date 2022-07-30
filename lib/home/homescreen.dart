@@ -19,7 +19,13 @@ class _homescreenState extends State<homescreen> {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Center(child: Image.asset('assets/images/bg3.png')),
+        Center(
+            child: Image.asset(
+          'assets/images/bg3.png',
+          fit: BoxFit.fill,
+          width: double.infinity,
+          height: double.infinity,
+        )),
         Scaffold(
           appBar: AppBar(
             title: Text('islamy'),
