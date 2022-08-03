@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:islamy2022/home/hades/hadesscreendetails.dart';
 import 'package:islamy2022/home/homescreen.dart';
 import 'package:islamy2022/home/quran/suradetailscreen.dart';
 
@@ -52,6 +53,7 @@ class MainApplication extends StatelessWidget {
       routes: {
         homescreen.routename: (buildContext) => homescreen(),
         suradetailsscreen.routename: (buildcontext) => suradetailsscreen(),
+        hadesdetails.routename: (buildContext) => hadesdetails(),
       },
       initialRoute: homescreen.routename,
     );
