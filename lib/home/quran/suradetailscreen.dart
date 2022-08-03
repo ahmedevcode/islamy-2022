@@ -57,12 +57,11 @@ class _suradetailsscreenState extends State<suradetailsscreen> {
   void readsura(int index) async {
     String filename = 'assets/file/${index + 1}.txt';
     String fileContent = await rootBundle.loadString(filename);
-    List<String> verses = fileContent.split('/n');
+    List<String> verses = fileContent.split('\n');
     ayat = verses;
     setState(() {});
   }
 }
-
 class suradetailarg {
   String suraname;
   int index;

@@ -14,7 +14,6 @@ class homescreen extends StatefulWidget {
 
 class _homescreenState extends State<homescreen> {
   int currentstate = 0;
-
   @override
   Widget build(BuildContext context) {
     return Stack(
