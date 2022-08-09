@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:islamy2022/home/quran/suranamewidget.dart';
+import 'package:islamy2022/main.dart';
+import 'package:islamy2022/providers/AppConfigProvider.dart';
+import 'package:provider/provider.dart';
 
 class QuranTab extends StatelessWidget {
   List<String> names = [
@@ -121,6 +124,7 @@ class QuranTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var provider = Provider.of<AppconfigProvider>(context);
     return Column(
       children: [
         Expanded(
@@ -141,7 +145,9 @@ class QuranTab extends StatelessWidget {
             separatorBuilder: (buildContext, index) {
               return Container(
                 height: 1,
-                color: Theme.of(context).primaryColor,
+                color: provider.isDark()
+                    ? Mythemedata.accentcolor
+                    : Mythemedata.primaryColor,
                 margin: EdgeInsets.symmetric(horizontal: 24),
               );
             },
