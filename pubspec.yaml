@@ -27,8 +27,16 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.17.0 # Add this line
+  provider: ^6.0.3
+
   flutter:
     sdk: flutter
+
+
+
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -51,6 +59,8 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
+  generate: true # Add this line
+
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
