@@ -15,9 +15,9 @@ void main() {
 }
 
 class Mythemedata {
-  static const Color primaryColor = Color.fromARGB(255, 169, 139, 95);
+  static const Color primaryColor = Color.fromARGB(255, 169, 148, 95);
   static const Color darkColor = Color.fromARGB(255, 17, 23, 40);
-  static const Color accentcolor = Color.fromARGB(255, 250, 204, 29);
+  static const Color accentcolor = Color.fromARGB(255, 250, 117, 29);
 
   static final ThemeData lighttheme = ThemeData(
       primaryTextTheme:
